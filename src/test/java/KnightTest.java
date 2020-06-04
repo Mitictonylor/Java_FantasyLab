@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 import players.fighters.Knight;
+import players.fighters.Weapon;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,7 +11,7 @@ public class KnightTest {
 
     @Before
     public void setUp() {
-        knight = new Knight ("Sir Michael");
+        knight = new Knight ("Sir Michael", Weapon.SWORD);
     }
 
     @Test

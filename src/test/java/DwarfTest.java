@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 import players.fighters.Dwarf;
+import players.fighters.Weapon;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,7 +11,7 @@ public class DwarfTest {
 
     @Before
     public void setUp() {
-        dwarf = new Dwarf("wee Alfred");
+        dwarf = new Dwarf("wee Alfred", Weapon.AXE);
     }
 
     @Test
