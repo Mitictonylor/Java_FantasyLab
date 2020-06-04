@@ -27,6 +27,11 @@ public enum Weapon implements IFight {
     }
 
     public String fight(Enemy enemy) {
+        if(this == enemy.getVulnerability()){
+            enemy.setHealth(0);
+        }else{
+            enemy.setHealth(enemy.getHealth() - this.damage);
+        }
         return "You hit " + enemy.getName() + " with " + this.getName() +" for " + this.getDamage() + "!" ;
     }
 }

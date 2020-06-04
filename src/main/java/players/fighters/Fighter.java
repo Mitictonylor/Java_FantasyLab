@@ -40,7 +40,6 @@ public abstract class Fighter{
     }
 
     public String fight(Enemy enemy){
-
         return this.weapon.fight(enemy);
     }
 }

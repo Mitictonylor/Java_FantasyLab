@@ -6,14 +6,14 @@ import players.fighters.Weapon;
 public class Troll extends Enemy{
 
     private int powerAttack;
-    private Weapon vulnerability;
 
-    public Troll(String name, int health) {
+    public Troll(String name, int health, int powerAttack) {
         super(name, health);
-        this.powerAttack = 40;
-        this.vulnerability = Weapon.SWORD;
+        this.powerAttack = powerAttack;
+        super.setVulnerability(Weapon.SWORD);
     }
-//      we got a barbarian and a troll in the room
+
+    //      we got a barbarian and a troll in the room
 //    barbarian set weapon to axe and attack troll with a axe
 //    troll health will go down 20,
 //    troll will hit back 40
@@ -27,7 +27,5 @@ public class Troll extends Enemy{
         return powerAttack;
     }
 
-    public Weapon getVulnerability() {
-        return vulnerability;
-    }
+
 }
