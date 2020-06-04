@@ -7,7 +7,7 @@ public class Orc extends Enemy{
     private int powerAttack;
     private Weapon vulnerability;
 
-    public Orc(String name, int health, int powerAttack, Weapon vulnerability) {
+    public Orc(String name, int health) {
         super(name, health);
         this.powerAttack = 15;
         this.vulnerability = Weapon.CLUB;
