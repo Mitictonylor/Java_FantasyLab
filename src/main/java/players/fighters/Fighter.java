@@ -5,9 +5,9 @@ public abstract class Fighter {
     private String name;
     private int health;
 
-    public Fighter(String name, int health) {
+    public Fighter(String name) {
         this.name = name;
-        this.health = health;
+        this.health = 100;
     }
 
     public String getName() {
