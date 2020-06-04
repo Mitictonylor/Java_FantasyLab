@@ -6,6 +6,7 @@ import players.fighters.Weapon;
 import static org.junit.Assert.assertEquals;
 
 public class OrcTest {
+
     Orc orc;
 
     @Before
